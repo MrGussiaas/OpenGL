@@ -1,0 +1,17 @@
+#version 120
+
+varying vec3 outColor;
+
+attribute vec4 position;
+attribute vec3 colorBufferzwwww;
+
+
+
+void main()
+{
+
+    outColor = vec3(colorBufferzwwww.r,colorBufferzwwww.r,colorBufferzwwww.r);
+    gl_Position = vec4(position.xy,0,1.0);
+    
+    
+}
